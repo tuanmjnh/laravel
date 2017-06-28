@@ -1,0 +1,90 @@
+- Install Laravel
+composer global require "laravel/installer"
+
+- Create Project
+laravel new 'Tên Project'
+composer create-project --prefer-dist laravel/laravel 'Tên Project'
+
+composer create-project asgardcms/platform your-project-name
+php artisan asgard:install
+
+- Current Laravel Version
+php artisan --version
+
+- update autoload
+composer dumpautoload
+
+composer update
+composer update --dev
+
+- Command list
+php artisan
+
+- Route list
+php artisan route:list
+
+- clear to command
+php artisan clear-compiled
+php artisan cache:clear
+php artisan config:clear
+
+
+
+extreme
+//"behat/behat": "^3.1",
+//"phpspec/phpspec": "^3.0",
+//"way/generators": "^3.0"
+
+//"laracasts/generators": "^1.1"
+
+
+
+github token: 5f85ea7b4df70aa3cd3fc8e097359c8a2638fbba
+
+
+
+//https://github.com/mitulgolakiya/laravel-api-generator
+php artisan mitul.generator:api ModelName
+php artisan mitul.generator:scaffold ModelName
+php artisan mitul.generator:scaffold_api ModelName
+
+php artisan mitul.generator:scaffold_api groups
+php artisan mitul.generator:scaffold_api groups_groups
+php artisan mitul.generator:scaffold_api groups_items
+php artisan mitul.generator:scaffold_api information
+php artisan mitul.generator:scaffold_api items
+php artisan mitul.generator:scaffold_api items_sub
+php artisan mitul.generator:scaffold_api language
+php artisan mitul.generator:scaffold_api language_items
+php artisan mitul.generator:scaffold_api language_key
+php artisan mitul.generator:scaffold_api members
+php artisan mitul.generator:scaffold_api modules
+php artisan mitul.generator:scaffold_api roles
+php artisan mitul.generator:scaffold_api setting
+php artisan mitul.generator:scaffold_api users
+
+
+//https://packagist.org/packages/19peaches/laravel-generator
+php artisan generator:make:migration groups
+php artisan generator:make:migration groups_groups
+php artisan generator:make:migration groups_items
+php artisan generator:make:migration information
+php artisan generator:make:migration items
+php artisan generator:make:migration items_sub
+php artisan generator:make:migration language
+php artisan generator:make:migration language_items
+php artisan generator:make:migration language_key
+php artisan generator:make:migration members
+php artisan generator:make:migration modules
+php artisan generator:make:migration roles
+php artisan generator:make:migration setting
+php artisan generator:make:migration users
+
+//https://github.com/ignasbernotas/laravel-model-generator
+php artisan make:models
+php artisan help make:models
+
+
+
+//https://github.com/appzcoder/crud-generator(extra)
+php artisan crud:generate Posts --fields="title#string, body#text"
